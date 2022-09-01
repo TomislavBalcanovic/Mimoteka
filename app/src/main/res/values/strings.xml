@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Mimoteka</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="najbolji_mimovi_eu">Najbolji mimovi EU</string>
+    <string name="o_cemu_ti_se_mimuje">O Čemu se tebi mimuje danas ?</string>
+    <string name="udji_u_svet_mimova">Udji u svet mimova</string>
+    <string name="password">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="username_hint">Username</string>
+    <string name="create_acc">Napravi akaunt</string>
+    <string name="login_acc">Loginuj se</string>
+    <string name="ili_text">ili</string>
+    <string name="save_text">Save</string>
+    <string name="title_hint">Naslov</string>
+    <string name="description_hint">Opis</string>
+    <string name="date_created">Date created</string>
+    <string name="sign_out">Sign out</string>
+    <string name="add_meme">Add Meme</string>
+    <string name="postavi_mim_klikom_u_gornjem_uglu">Postavi mim klikom + u gornjem uglu</string>
+
+
+</resources>

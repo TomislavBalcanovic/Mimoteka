@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.tomybdeveloper.mimoteka.view.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.tomybdeveloper.mimoteka.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_createAccFragment"
+            app:destination="@id/createAccFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_memeListFragment"
+            app:destination="@id/memeListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccFragment"
+        android:name="com.tomybdeveloper.mimoteka.view.CreateAccFragment"
+        android:label="fragment_create_acc"
+        tools:layout="@layout/fragment_create_acc" >
+        <action
+            android:id="@+id/action_createAccFragment_to_memeListFragment"
+            app:destination="@id/memeListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.tomybdeveloper.mimoteka.view.PostFragment"
+        android:label="fragment_post"
+        tools:layout="@layout/fragment_post" >
+        <action
+            android:id="@+id/action_postFragment_to_memeListFragment"
+            app:destination="@id/memeListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/memeListFragment"
+        android:name="com.tomybdeveloper.mimoteka.view.MemeListFragment"
+        android:label="fragment_meme_list"
+        tools:layout="@layout/fragment_meme_list" >
+        <argument
+            android:name="UserApi"
+            app:argType="com.tomybdeveloper.mimoteka.util.MimotekaAPI"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_memeListFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_memeListFragment_to_postFragment"
+            app:destination="@id/postFragment" />
+    </fragment>
+</navigation>
